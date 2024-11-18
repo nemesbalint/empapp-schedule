@@ -3,6 +3,7 @@ package empapp;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.time.Duration;
@@ -19,5 +20,10 @@ public class CounterService {
             Thread.sleep(Duration.ofSeconds(1));
         }
     }
+
+//    @Scheduled(fixedRate = 5000)
+//    public void log() {
+//        log.info("Scheduled");
+//    }
 
 }
